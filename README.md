@@ -43,8 +43,6 @@ To launch the pedestrian simulator:
   <figcaption>Armadillo</figcaption>
 </figure>
 
-
-
 The robot used is a simple version of the armadillo robot by RobotiCan (https://robotican.net/armadillo/), that includes its base, lidar and kinetic sensors.
 It was taken from: https://github.com/TalFeiner/robot_description.
 
