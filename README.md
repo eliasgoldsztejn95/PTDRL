@@ -47,5 +47,5 @@ The robot used is a simple version of the armadillo robot by RobotiCan (https://
 It was taken from: https://github.com/TalFeiner/robot_description.
 
 ### Commands
-To launch the armadillo like robot launch:
+To launch the blattoidea robot launch:
 > roslaunch blattoidea blattoidea.launch
