@@ -11,7 +11,7 @@ which is amazon's representation of a hospital. It is very rich in the sense of 
 realistically a hospital.
 
 ### Notes
-The models have to be downloaded manually from: https://app.ignitionrobotics.org/plateau/fuel/models/Casual%20female into local models folder.
+The models have to be downloaded manually from: https://app.ignitionrobotics.org/fuel/models into local models folder.
 
 # Pedestrain simulator
 <img src="https://user-images.githubusercontent.com/75029654/166143081-f978b80b-680e-4c15-87a3-a95c89352896.png" width="500" height="250">
