@@ -23,7 +23,8 @@ This package allows to choose the quantity and type of pedestrians, and motion p
 The hospital world of amazon has to be moved to pedsim_gazebo_plugin/worlds folder. Notice that the line: plugin name="ActorPosesPlugin" filename="libActorPosesPlugin.so"
 has to be added at the end of the file to allow pedestrian movement.
   
-Notice that the pedestrian simulator has to account for obstacles in the world.
+Notice that the pedestrian simulator has to account for obstacles in the world. This should be described in <scenario>.xml found in pedsim_simulator/secnarios.
+  
   
 ### Commands
 To launch the hospital world:
