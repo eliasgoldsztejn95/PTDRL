@@ -1,0 +1,19 @@
+## Gmapping ##
+
+We followe these steps:
+
+1) Launch Gazebo hospital world:
+
+roslaunch aws_robomaker_hospital_world view_hospital.launch 
+
+2) Spawn turtlebot (commenting Gazebo):
+
+> roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch 
+
+3) Start Gmapping:
+
+> roslaunch turtlebot3_slam turtlebot3_slam.launch
+
+4) Save map:
+
+> rosrun map_server map_saver -f mymap
