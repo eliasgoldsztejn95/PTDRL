@@ -1,0 +1,30 @@
+## Issues ##
+
+################ Robot ###############
+
+## Armadillo ##
+
+We tried to work with Armadillo with ROS kinetic, however the hospital world and the simulator were not compatible with the gazebo version.
+
+## ROS kinetic ##
+
+Things we tried:
+
+1) Moving the people with Tal's plugin were they have a mobile invisible base. It works, however the base needs collision to not fall from the ground
+   and this collision collides with walls, making the pedestrian simulator complicated to implement (We thought of people moving around the hospital and
+   possibly traversing walls.
+2) Script that updates the poses of the pedestrian according to the ped_sim ros plugin. The script works, however, when more than two pedestrians are in
+   the world, the software is too heavy and they lag.
+
+Things we did not try:
+
+1) Updating Gazebo 9 to Kinect. Supposedly it is compatible, however Tal advised us against it since he said Gazebo is unstable, and not good for
+   simulations.
+ 
+## ROS noetic ##
+
+Things we tried:
+
+1) Using ROS kinetic in the Docker, and noetic in the host. In this way we have the upadated versions of Gazebo, needed for the pedestrain simulator and
+the hospital world. The armadillo controllers are not compatible to those of noetic.
+2) Updating the Gazebo version in the Docker with Kinetic. We were not able to accomplish this after 3 hours of work.
