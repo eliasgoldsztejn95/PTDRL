@@ -1,1 +1,15 @@
+1) Launch world with pedestrians:
 
+> roslaunch pedsim_gazebo_plugin hospital.launch 
+
+2) Spawn robot:
+
+> roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+
+3) Simulate pedestrians:
+
+> roslaunch pedsim_simulator hospital_corridor.launch
+
+4) Navigate:
+
+> roslaunch turtlebot3_navigation turtlebot3_navigation.launch
