@@ -1,4 +1,4 @@
-1) Launch world with pedestrians:
+1) Launch world with pedestrians [1].
 
 > roslaunch pedsim_gazebo_plugin hospital.launch 
 
@@ -10,6 +10,12 @@
 
 > roslaunch pedsim_simulator hospital_corridor.launch
 
-4) Navigate:
+4) Navigate [2]:
 
 > roslaunch turtlebot3_navigation turtlebot3_navigation.launch
+
+[1] If pedestrains need to be aware of robot, remap pedbot/control/cmd_vel in hospital launch
+folder: <remap from="/cmd_vel" to="/pedbot/control/cmd_vel"/>.
+
+[2] If remapped cmd_vel, change move_base.launch veloicty topic: 
+<arg name="cmd_vel_topic" default="/pedbot/control/cmd_vel" />
