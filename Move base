@@ -4,7 +4,11 @@
 
 2) Spawn robot:
 
+Turtlebot:
 > roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+
+Blattoidea
+> roslaunch blattoidea blattoidea.launch
 
 3) Simulate pedestrians:
 
@@ -12,7 +16,11 @@
 
 4) Navigate [2]:
 
+Turtlebot:
 > roslaunch turtlebot3_navigation turtlebot3_navigation.launch
+
+Blattoidea:
+> roslaunch blattoidea navigation.launch
 
 [1] If pedestrains need to be aware of robot, remap pedbot/control/cmd_vel in hospital launch
 folder: <remap from="/cmd_vel" to="/pedbot/control/cmd_vel"/>.
