@@ -1,3 +1,5 @@
+##### Steps for navigation ######
+
 1) Launch world with pedestrians [1].
 
 > roslaunch pedsim_gazebo_plugin hospital.launch 
@@ -27,3 +29,18 @@ folder: <remap from="/cmd_vel" to="/pedbot/control/cmd_vel"/>.
 
 [2] If remapped cmd_vel, change move_base.launch veloicty topic: 
 <arg name="cmd_vel_topic" default="/pedbot/control/cmd_vel" />
+
+##### No AMCL ######
+
+To run turtlebot without AMCL do these two things:
+
+1) In turtlebot3_navigation/turtlebot3_navigation.launch comment out the AMCL part.
+2) In turtlebot3_gazebo/turtlebot3_empty_world.launch add tf from map to odom:
+
+<node
+	name="tf_map_odom"
+	pkg="tf"
+	type="static_transform_publisher"
+	args="7 1 0 0.78 0 0 map odom 40" />
+
+
