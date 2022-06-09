@@ -1,0 +1,29 @@
+For testing the different robots we propose two platforms:
+
+1) Quality platform:
+
+Our simulator
+
+### Launch the world, the pedestrians, and the robot: ###
+
+> roslaunch pedsim_gazebo_plugin hospital.launch
+
+> roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+or
+> roslaunch blattoidea blattoidea.launch
+
+> roslaunch pedsim_simulator hospital_corridor_and_room.launch
+
+### Launch navigation method ###
+
+> roslaunch turtlebot3_navigation turtlebot3_navigation.launch or roslaunch blattoidea navigation.launch
+
+### Test robot ###
+
+> rosrun testbench test_robot.py (select whether to use move_base/amcl and how many tests)
+
+> rosservice call /init_test_server
+
+2) Metric platform:
+
+SocnavBench
