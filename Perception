@@ -1,0 +1,27 @@
+ROS available real-time object detection/tracking algorithms:
+
+Obstacle detector:
+https://github.com/tysik/obstacle_detector
+It clusters objects into circles or lines. Using a Kalman filter it finds their speeds.
+It uses 2D lidar scan.
+
+Multiple object tracking lidar:
+https://github.com/praveen-palanisamy/multiple-object-tracking-lidar
+It clusters the n nearest objects into pointclouds. Uses RANSAC and Kalman filters.
+It uses either 2D Lidar scanners or depth pointclouds.
+
+Spencer people tracking:
+https://github.com/spencer-project/spencer_people_tracking
+Clusters people using RGBD and 2D lidar scanner. Best tracking algorithm.
+
+
+-------------------------------------------
+
+For evaluating GA3-CADRL, we use obstacle detector.
+The robot with best performance is ABot.
+
+1) Import robot
+> roslaunch cadrl_project robot_tf_import.launch
+
+2) Run obstacle detector
+> roslaunch perception obstacle_detector.launch
