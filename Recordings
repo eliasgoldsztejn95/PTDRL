@@ -1,0 +1,13 @@
+Recording of object tracking:
+
+1) Run robot with object tracking:
+
+2) Record topic /filtered_obstacles
+
+rosbag record --duration=10m -o <file_name.bag> /filtered_obstacles
+
+Then convert to yaml:
+
+rostopic echo /filtered_obstacles | tee tracking1.yaml
+
+time rosbag play --immediate  <file_name.bag> --topics /filtered_obstacles 
