@@ -21,7 +21,7 @@ For evaluating GA3-CADRL, we use obstacle detector.
 The robot with best performance is ABot.
 
 1) Import robot
-> roslaunch cadrl_project robot_tf_import.launch
+> roslaunch blattoidea robot_tf_import.launch
 
 2) Run obstacle detector
 > roslaunch perception obstacle_detector.launch
