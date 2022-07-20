@@ -10,6 +10,9 @@ https://github.com/praveen-palanisamy/multiple-object-tracking-lidar
 It clusters the n nearest objects into pointclouds. Uses RANSAC and Kalman filters.
 It uses either 2D Lidar scanners or depth pointclouds.
 
+> rosrun perception scan_to_filtered.py
+> rosrun multi_object_tracking_lidar kf_tracker
+
 Spencer people tracking:
 https://github.com/spencer-project/spencer_people_tracking
 Clusters people using RGBD and 2D lidar scanner. Best tracking algorithm.
