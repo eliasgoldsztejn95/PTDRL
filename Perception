@@ -13,6 +13,8 @@ It uses either 2D Lidar scanners or depth pointclouds.
 > rosrun perception scan_to_filtered.py
 > rosrun multi_object_tracking_lidar kf_tracker
 
+The topic of interest is /viz
+
 Spencer people tracking:
 https://github.com/spencer-project/spencer_people_tracking
 Clusters people using RGBD and 2D lidar scanner. Best tracking algorithm.
