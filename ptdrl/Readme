@@ -1,0 +1,10 @@
+Algorithm for collision avoidance
+
+> roslaunch pedsim_gazebo_plugin hospital.launch
+> roslaunch roslaunch pedsim_simulator hospital_corridor_and_room.launch
+> roslaunch roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+> roslaunch turtlebot3_navigation turtlebot3_navigation.launch
+> rosrun rosrun perception scan_to_filtered.py
+> rosrun rosrun multi_object_tracking_lidar kf_tracker
+
+> rosrun ptdrl train.py
