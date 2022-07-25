@@ -1,0 +1,4 @@
+To generate new synthetic data for LSTM-MDN:
+
+> rosrun perception simulate_move_base.py
+> rosbag record --duration=60m -o <file_name.bag> /viz
