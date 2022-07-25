@@ -1,0 +1,4 @@
+Testbench for performance
+
+> rosrun testbench test_robot.py
+> rosservice call init_test_server
