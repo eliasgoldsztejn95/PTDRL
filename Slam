@@ -20,4 +20,4 @@ roslaunch aws_robomaker_hospital_world view_hospital.launch
 
 5) Save map:
 
-> rosrun map_server map_saver -f mymap
+> rosrun map_server map_saver -f maps
