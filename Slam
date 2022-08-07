@@ -14,6 +14,10 @@ roslaunch aws_robomaker_hospital_world view_hospital.launch
 
 > roslaunch turtlebot3_slam turtlebot3_slam.launch
 
-4) Save map:
+4) Move the robot
+
+> roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+5) Save map:
 
 > rosrun map_server map_saver -f mymap
