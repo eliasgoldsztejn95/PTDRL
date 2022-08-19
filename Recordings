@@ -2,7 +2,7 @@ Recording of object tracking:
 
 1) Run robot with object tracking:
 
-2) Record topic /filtered_obstacles
+2) Record topic /filtered_obstacles or /move_base/local_costmap/costmap
 
 rosbag record --duration=10m -o <file_name.bag> /filtered_obstacles
 
