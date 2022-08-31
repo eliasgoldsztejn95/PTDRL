@@ -16,7 +16,7 @@ global xml_file
 
 # list of different actor models. 1 is a normal person, 2 is a wheelchair. It has to be the same size as actor.agents_states.
 global model_list
-model_list = [1,2,1,3,1,3]
+model_list = [1,3,2,3,2,1,2,1,3,1,2]
 #model_list = [4,4,4,4,4,4]
 
 def actor_poses_callback(actors):
