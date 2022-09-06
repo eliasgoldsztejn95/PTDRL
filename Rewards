@@ -1,0 +1,25 @@
+We tried different rewards:
+
+1) -1 for collision. 10 If reached goal. Stop if coliided.
+
+Advantages: It wants to avoid collisions.
+Disadvantages: It does not encourage the robot to go faster. Collisions are inevitable so it cannot learn.
+
+2) Distance to goal when finished.
+
+Advantages: It encourages the robot to travel the most amount of distance better than, before because the reward is more informative.
+Disadvantages: It does not encourage the robot to go faster.
+
+3) Tanh of distance covered at each step. -30 if collision. Do not stop until goal reached.
+
+Partial success: The robot learns to go fast but not avoid collisions.
+Advantages: It encourages the robot to go faster.
+Disadvantages: Collisions are sparse and noisy (only when objects are in a certain threshold).
+
+4) Tanh of distance covered at each step. Collision covered at each step. Do not stop until goal reached.
+
+Partial success: The robot learns to go fast and avoid collisions, but not to a good extent.
+Advantages: It encourages the robot to go faster. It tries to avoid collisions.
+Disadvantages: It does not perform better than simple default parameters.
+
+4) Tanh of distance covered at each step. Tanh of collision covered at each step. Do not stop until goal reached.
