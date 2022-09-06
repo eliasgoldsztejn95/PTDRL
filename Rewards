@@ -22,4 +22,4 @@ Partial success: The robot learns to go fast and avoid collisions, but not to a 
 Advantages: It encourages the robot to go faster. It tries to avoid collisions.
 Disadvantages: It does not perform better than simple default parameters.
 
-4) Tanh of distance covered at each step. Tanh of collision covered at each step. Do not stop until goal reached.
+5) Tanh of distance covered at each step. Tanh of collision covered at each step. Do not stop until goal reached.
