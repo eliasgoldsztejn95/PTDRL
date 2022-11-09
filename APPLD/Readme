@@ -12,3 +12,5 @@ on the actions of the person in each recording, using a local planner.
 For this testbench, we do not reproduce the whole paper, but take the optimal parameters already found for DWA for the Jackal robot.
 Because the tagging of the environments, and the correspondent classifier could not be retrieved from the authors, we generate this labels
 ourselves, by moving the robot in different parts of the hospital and tagging the environments manually.
+
+<img src="https://user-images.githubusercontent.com/75029654/166143327-e4caf24c-6b8a-4629-9f03-982de54fe37e.png" width="300" height="300">
