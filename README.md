@@ -33,20 +33,7 @@ To launch the hospital world:
 To launch the pedestrian simulator:
 > roslaunch pedsim_simulator simple_pedestrians.launch
 
-# Robot
-<figure>
-  <img src="https://user-images.githubusercontent.com/75029654/166143949-f4bf762d-8f0a-431f-b968-629d54b9963e.png" width="250" height="250"title="Optional title">
-  <figcaption>Blattoidea</figcaption>
-</figure>
-
-<figure>
-  <img src="https://user-images.githubusercontent.com/75029654/166143515-1d70e6c3-9b27-472e-b0d3-05d21cc4456b.png" width="250" height="250"/>
-  <figcaption>Armadillo</figcaption>
-</figure>
-
-The robot used is a simple version of the armadillo robot by RobotiCan (https://robotican.net/armadillo/), that includes its base, lidar and kinetic sensors.
-It was taken from: https://github.com/TalFeiner/robot_description.
-
 ### Commands
-To launch the blattoidea robot launch:
+To launch the available robots launch:
 > roslaunch blattoidea blattoidea.launch
+> roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
