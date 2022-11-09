@@ -13,4 +13,3 @@ For this testbench, we do not reproduce the whole paper, but take the optimal pa
 Because the tagging of the environments, and the correspondent classifier could not be retrieved from the authors, we generate this labels
 ourselves, by moving the robot in different parts of the hospital and tagging the environments manually.
 
-<img src="https://github.com/eliasgoldsztejn95/Hospital_bot/issues/6#issue-1442030223" width="300" height="300">
