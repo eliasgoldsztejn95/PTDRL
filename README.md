@@ -36,4 +36,5 @@ To launch the pedestrian simulator:
 ### Commands
 To launch the available robots launch:
 > roslaunch blattoidea blattoidea.launch
+
 > roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
