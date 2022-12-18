@@ -11,3 +11,9 @@ Then convert to yaml:
 rostopic echo /filtered_obstacles | tee tracking1.yaml
 
 time rosbag play --immediate  <file_name.bag> --topics /filtered_obstacles 
+
+Recording of scan+odometry synchronized
+
+python3 lidar_odom.py
+
+rosbag record -e --duration=25m "/scan_sync" "/odom_sync"
