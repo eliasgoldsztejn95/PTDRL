@@ -10,7 +10,8 @@ Then convert to yaml:
 
 rostopic echo /filtered_obstacles | tee tracking1.yaml
 
-time rosbag play --immediate  <file_name.bag> --topics /filtered_obstacles 
+time rosbag play --immediate  <file_name.bag> --topics /filtered_obstacles (Not stable)
+rosbag play <file_name.bag>
 
 Recording of scan+odometry synchronized
 
