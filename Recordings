@@ -18,3 +18,16 @@ Recording of scan+odometry synchronized
 python3 lidar_odom.py
 
 rosbag record -e --duration=25m "/scan_sync" "/odom_sync"
+
+3) Recording for MDRNN:
+
+- Launch simulation and appld_collect_readings.py
+- Run costmap_vel_inf_sync.py to synchronize costmap, velocity and inflation radius
+- Record: rosbag record -e --duration=5m -o <file_name.bag> "/costmap_sync" "/vel_sync" "/inf_sync"
+- Shut down everything
+- rosbag play <file_name.bag> and:
+  rostopic echo /costmap_sync | tee costmap_sync.yaml
+  rostopic echo /vel_sync | tee vel_sync.yaml
+  rostopic echo /inf_sync | tee inf_sync.yaml
+- costmap_yaml_to_np.py, inf_yaml_to_np.py, and vel_yaml_to_np.py
+- Put in MDRNN folder
