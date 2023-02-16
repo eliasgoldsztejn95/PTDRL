@@ -6,3 +6,7 @@ Changing local planner:
     
     <!--<param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />-->
     <param name="TebLocalPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
+2) robot_env.py
+
+       self._tuning_client_local = dynamic_reconfigure.client.Client('move_base/TebLocalPlannerROS',timeout=4, config_callback=None)
+       #self._tuning_client_local = dynamic_reconfigure.client.Client('move_base/DWAPlannerROS',timeout=4, config_callback=None)
