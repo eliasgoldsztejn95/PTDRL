@@ -10,3 +10,27 @@ Changing local planner:
 
        self._tuning_client_local = dynamic_reconfigure.client.Client('move_base/TebLocalPlannerROS',timeout=4, config_callback=None)
        #self._tuning_client_local = dynamic_reconfigure.client.Client('move_base/DWAPlannerROS',timeout=4, config_callback=None)
+3) task_params.yaml
+
+    local_planner: dwa/teb
+
+Changing robot:
+1) rl.launch
+
+    <!--<include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch" />-->
+    <include file="$(find blattoidea)/launch/blattoidea.launch" />
+    
+    <!--<include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch" />-->
+    <include file="$(find blattoidea)/launch/navigation.launch" />
+   
+2) task_params.yaml
+
+    model_name: "turtlebot3_waffle"
+    model_name: "blattoidea"
+    
+
+Changing value function:
+1) task_en.py
+
+
+    
