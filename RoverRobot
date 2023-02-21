@@ -17,7 +17,7 @@ python2 odom_baselink.py
 rosrun gmapping slam_gmapping _base_frame:=base_footprint _linearUpdate:=0.0 _angularUpdate:=0.0
 
 6) Start move_base:
-rosrun move_base move_base
+rosrun move_base move_base _base_local_planner:=dwa_local_planner/DWAPlannerROS
 
 Now you are ready to go!!!
 
