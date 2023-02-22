@@ -19,6 +19,9 @@ rosrun gmapping slam_gmapping _base_frame:=base_footprint _linearUpdate:=0.0 _an
 6) Start move_base:
 roslaunch roverrobotics_description rover_move_base.launch
 
+7) Start trial
+python3 ptdrl_real.py
+
 Now you are ready to go!!!
 
 
