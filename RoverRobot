@@ -1,6 +1,6 @@
 To launch rover robot and move_base:
 
-Check ports. sudo chmod 0777 dev/ttyUSB0/1
+Check ports. sudo chmod 0777 /dev/ttyUSB0/1
 1) Launch rover driver:
 roslaunch roverrobotics_driver pro.launch
 
