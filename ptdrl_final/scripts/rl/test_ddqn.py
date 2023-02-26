@@ -235,6 +235,36 @@ class DDQN_Replay():
 
         return params
 
+    def action_to_params_appld_extended(self, action):
+
+        #Parameters appld per context
+        if action == 0 :
+            params = { 'max_vel_x' : 1.59, 'min_vel_x' : -1.59, 'max_vel_trans': 1.59, 'max_vel_theta': 0.89, 'vx_samples': 12, 'vth_samples': 18, 'occdist_scale': 0.4,
+            'path_distance_bias': 16, 'goal_distance_bias': 7, 'inflation_radius': 0.42}
+        elif action == 1:
+            params = { 'max_vel_x' : 0.8, 'min_vel_x' : -0.8, 'max_vel_trans': 0.8, 'max_vel_theta': 0.73, 'vx_samples': 6, 'vth_samples': 42, 'occdist_scale': 0.04,
+            'path_distance_bias': 32, 'goal_distance_bias': 20, 'inflation_radius': 0.4}
+        elif action == 2:
+            params = { 'max_vel_x' : 0.71, 'min_vel_x' : -0.71, 'max_vel_trans': 0.71, 'max_vel_theta': 0.91, 'vx_samples': 16, 'vth_samples': 53, 'occdist_scale': 0.55,
+            'path_distance_bias': 16, 'goal_distance_bias': 18, 'inflation_radius': 0.39}
+        elif action == 3:
+            params = { 'max_vel_x' : 0.25, 'min_vel_x' : -0.25, 'max_vel_trans': 0.25, 'max_vel_theta': 1.34, 'vx_samples': 8, 'vth_samples': 59, 'occdist_scale': 0.43,
+            'path_distance_bias': 32, 'goal_distance_bias': 20, 'inflation_radius': 0.40}
+        if action == 4 :
+            params = { 'max_vel_x' : 0.15, 'min_vel_x' : -0.15, 'max_vel_trans': 0.15, 'max_vel_theta': 1.34, 'vx_samples': 8, 'vth_samples': 59, 'occdist_scale': 0.43,
+            'path_distance_bias': 32, 'goal_distance_bias': 20, 'inflation_radius': 0.15}
+        elif action == 5:
+            params = { 'max_vel_x' : 1, 'min_vel_x' : -1, 'max_vel_trans': 1, 'max_vel_theta': 0.73, 'vx_samples': 6, 'vth_samples': 42, 'occdist_scale': 0.04,
+            'path_distance_bias': 32, 'goal_distance_bias': 20, 'inflation_radius': 0.35}
+        elif action == 6:
+            params = { 'max_vel_x' : 0.5, 'min_vel_x' : -0.5, 'max_vel_trans': 0.5, 'max_vel_theta': 0.91, 'vx_samples': 16, 'vth_samples': 53, 'occdist_scale': 0.55,
+            'path_distance_bias': 16, 'goal_distance_bias': 18, 'inflation_radius': 0.3}
+        elif action == 7:
+            params = { 'max_vel_x' : 0.2, 'min_vel_x' : -0.2, 'max_vel_trans': 0.2, 'max_vel_theta': 1.2, 'vx_samples': 8, 'vth_samples': 59, 'occdist_scale': 0.43,
+            'path_distance_bias': 32, 'goal_distance_bias': 20, 'inflation_radius': 0.6}
+
+        return params
+
     def test(self):
         """
         trains the model's parameters over a fixed number of epochs, specified by `n_epochs`, as long as the loss keeps decreasing.
