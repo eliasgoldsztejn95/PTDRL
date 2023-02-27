@@ -7,19 +7,23 @@ roslaunch roverrobotics_driver pro.launch
 2) Launch lidar:
 roslaunch rplidar_ros view_rplidar.launch
 
-3) Launch robot description:
+3) Filter scan
+rosparam load /home/tal/rover_ws/src/rplidar_ros/filter/my_filter_config.yaml scan_to_scan_filter_chain
+rosrun laser_filters scan_to_scan_filter_chain scan:=/scan_raw scan_filtered:=/scan
+
+4) Launch robot description:
 roslaunch roverrobotics_description description-4wd.launch
 
-4) Publish odom -> base_footprint transform:
+5) Publish odom -> base_footprint transform:
 python2 odom_baselink.py
 
-5) Start slam_mapping:
+6) Start slam_mapping:
 rosrun gmapping slam_gmapping _base_frame:=base_footprint _linearUpdate:=0.0 _angularUpdate:=0.0 _map_update_interval:=1.0
 
-6) Start move_base:
+7) Start move_base:
 roslaunch roverrobotics_description rover_move_base.launch
 
-7) Start trial
+8) Start trial
 python3 ptdrl_real.py
 
 Now you are ready to go!!!
