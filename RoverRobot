@@ -9,6 +9,7 @@ roslaunch rplidar_ros view_rplidar.launch
 
 3) Filter scan
 rosparam load /home/tal/rover_ws/src/rplidar_ros/filter/my_filter_config.yaml scan_to_scan_filter_chain
+rosrun laser_filters scan_to_scan_filter_chain
 rosrun laser_filters scan_to_scan_filter_chain scan:=/scan_raw scan_filtered:=/scan
 
 4) Launch robot description:
