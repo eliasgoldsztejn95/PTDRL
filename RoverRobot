@@ -2,7 +2,7 @@ To launch rover robot and move_base:
 
 Check ports. sudo chmod 0777 /dev/ttyUSB0/1
 1) Launch rover driver:
-roslaunch roverrobotics_driver pro.launch
+roslaunch roverrobotics_driver pro/zero2.launch
 
 2) Launch lidar:
 roslaunch rplidar_ros view_rplidar.launch
@@ -13,7 +13,7 @@ rosrun laser_filters scan_to_scan_filter_chain
 rosrun laser_filters scan_to_scan_filter_chain scan:=/scan_raw scan_filtered:=/scan
 
 4) Launch robot description:
-roslaunch roverrobotics_description description-4wd.launch
+roslaunch roverrobotics_description description-2/4wd.launch
 
 5) Publish odom -> base_footprint transform:
 python2 odom_baselink.py
