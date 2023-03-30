@@ -1,0 +1,13 @@
+<launch>
+  <!-- move_base -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+    <rosparam file="$(find roverrobotics_description)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find roverrobotics_description)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find roverrobotics_description)/param/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find roverrobotics_description)/param/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find roverrobotics_description)/param/move_base_params.yaml" command="load" />
+    <rosparam file="$(find roverrobotics_description)/param/dwa_local_planner_params.yaml" command="load" />
+    <param name="DWAPlannerROS/min_vel_x" value="0.0"/>
+  </node>
+</launch>
