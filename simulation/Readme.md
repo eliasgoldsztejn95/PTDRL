@@ -1,2 +1,2 @@
 
-g
+Simulation environment with pedestrians.
