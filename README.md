@@ -27,7 +27,8 @@ For other navigation systems, one needs to change task_env.py, and robot_env.py 
 
 ## Simulation, robot and training algorithm
 - **ptdrl** was written in the OpenAI ROS fashion. This means that training, simulation, and robot environments are separated.
-- We supply 3 training algorithms: DDQN, TD3 and SAC. One can try any RL algorithm by using: 
+- We supply 3 training algorithms: DDQN, TD3 and SAC. For PTDRL, we used DDQN with the train_ddqn.py script. One can use any RL algorithm by replacing: env = task_env.PtdrlTaskEnv() in the training script.
+- task_env provides all the context for the task we want the robot to learn, in this case, navigating fast and safely. It contains the main functions: step, reset, 
 
 
 This repository includes all file to work with PTDRL: Parameter Tuning Using Deep Reinforcement Learning
