@@ -1,7 +1,11 @@
 # PTDRL 
-This repository includes all file to work with PTDRL: Parameter Tuning with Deep Reinforcement Learning
+This repository includes all file to work with PTDRL: Parameter Tuning Using Deep Reinforcement Learning
 
 ptdrl_final contains all trained networks, and with ptdrl.py one can run our code with the DWA local planner using move_base.
+
+
+
+https://user-images.githubusercontent.com/75029654/229076291-23a9fd2d-67bf-4096-99ed-5c15fba5552e.mp4
 
 
 
