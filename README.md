@@ -9,7 +9,15 @@ https://user-images.githubusercontent.com/75029654/229076291-23a9fd2d-67bf-4096-
  - Python version at least 3.6
  - Python packages: pytorch, rospy
 
+## Running PTDRL on a real robot
 
+PTDRL can be used in combination with move_base:
+
+ - Download ptdrl_robot folder to the robot computer
+ - Use move_base package for navigation
+ - Run ptdrl.py
+
+For other navigation systems, one needs to change task_env.py, and robot_env.py to connect with the costmaps and with the parameter tuning module.
 
 
 This repository includes all file to work with PTDRL: Parameter Tuning Using Deep Reinforcement Learning
