@@ -1,6 +1,0 @@
-Tracking obstacles:
-
-Download package: https://github.com/praveen-palanisamy/multiple-object-tracking-lidar
-
-> rosrun perception scan_to_filtered.py
-> rosrun multi_object_tracking_lidar kf_tracker
