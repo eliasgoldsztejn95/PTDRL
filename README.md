@@ -13,7 +13,7 @@ https://user-images.githubusercontent.com/75029654/229076291-23a9fd2d-67bf-4096-
 
 PTDRL can be used in combination with move_base:
 
- - Download ptdrl_robot folder to the robot computer
+ - Download ptdrl_final folder to the robot computer
  - Use move_base package for navigation
  - Run ptdrl.py
 
