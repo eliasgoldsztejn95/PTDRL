@@ -31,9 +31,9 @@ For other navigation systems, one needs to change task_env.py, and robot_env.py 
 - task_env.py provides all the context we want the robot to learn for the RL task, in this case, navigating fast and safely. It contains the main functions: **step** **reset** and **_init_env_variables**. It includes the move_base related functions: **_set_init_pose**, **_send_goal**, and **tune_parameters**.
 - robot_en.py contains all the functions associated to the specific robot that you want to train. It also provides the connection with move_base. It contains the main callback functions: **_scan_callback**, **_odom_callback**, and **_costmap_callback**. 
 - params.yaml includes:
-- Which local planner is used
-- The set of parameters of the local planner
-- A list of rooms the robot goes through inside the environment
+1. Which local planner is used
+2. The set of parameters of the local planner
+3. A list of rooms the robot goes through inside the environment
 
 # Hospital world
 <img src="https://user-images.githubusercontent.com/75029654/166143327-e4caf24c-6b8a-4629-9f03-982de54fe37e.png" width="300" height="300">
