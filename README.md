@@ -23,7 +23,11 @@ For other navigation systems, one needs to change task_env.py, and robot_env.py 
 - Create your simulation environment of choice. In our case we used a realistic hospital world taken from: https://github.com/aws-robotics/aws-robomaker-hospital-world. We integrated moving people using: https://github.com/srl-freiburg/pedsim_ros. The steps for combining them can be found in **simulation** folder.
 - Download your robot. In our case we experimented with Turtlebot and Blattoidea robots.
 - Clone **ptdrl** folder. 
+- Train using: train_ddqn.py. Test using: test_ddqn.py.
+
+## Simulation, robot and training algorithm
 - **ptdrl** was written in the OpenAI ROS fashion. This means that training, simulation, and robot environments are separated.
+- We supply 3 training algorithms: DDQN, TD3 and SAC. One can try any RL algorithm by using: 
 
 
 This repository includes all file to work with PTDRL: Parameter Tuning Using Deep Reinforcement Learning
