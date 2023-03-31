@@ -19,6 +19,12 @@ PTDRL can be used in combination with move_base:
 
 For other navigation systems, one needs to change task_env.py, and robot_env.py to connect with the costmaps and with the parameter tuning module.
 
+## Training PTDRL on simulation
+- Create your simulation environment of choice. In our case we used a realistic hospital world taken from: https://github.com/aws-robotics/aws-robomaker-hospital-world. We integrated moving people using: https://github.com/srl-freiburg/pedsim_ros. The steps for combining them can be found in **simulation** folder.
+- Download your robot. In our case we experimented with Turtlebot and Blattoidea robots.
+- Clone **ptdrl** folder. 
+- **ptdrl** was written in the OpenAI ROS fashion. This means that training, simulation, and robot environments are separated.
+
 
 This repository includes all file to work with PTDRL: Parameter Tuning Using Deep Reinforcement Learning
 
@@ -26,11 +32,6 @@ ptdrl_final contains all trained networks, and with ptdrl.py one can run our cod
 
 
 
-
-# Hospital_bot
-Hospital simulator with pedestrians and robot
-
-This repository includes files and commands used for the creation of a hospital simulator with pedestrians and a robot.
 
 # Hospital world
 <img src="https://user-images.githubusercontent.com/75029654/166143327-e4caf24c-6b8a-4629-9f03-982de54fe37e.png" width="300" height="300">
