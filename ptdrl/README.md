@@ -7,5 +7,5 @@
 
 ### To change training algorithm, robot and world:
 1. In your RL algorithm replace: env=task_env.PtdrlTaskEnv()
-2. In task_params.yaml define parameters, local planners and geography of the world
+2. In task_params.yaml define parameters, local planners and goal points of the world
 
