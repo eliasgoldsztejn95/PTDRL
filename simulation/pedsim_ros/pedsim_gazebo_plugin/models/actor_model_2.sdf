@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+
+
+<!--<model name="actor_model">
+  <pose>0 0 0.75 0 0 0</pose>
+  <link name="link">
+    <collision name="collision">
+      <geometry>
+        <box>
+          <size>.5 .5 1.5</size>
+        </box>
+      </geometry>
+    </collision>
+
+    <visual name="visual">
+      <geometry>
+        <box>
+          <size>.5 .5 1.5</size>
+        </box>
+      </geometry>
+    </visual>
+
+  </link>
+</model>-->
+
+
+<model name="actor_model">
+  <pose>0 -0 -0.75 0 0 0</pose>
+  <link name="link">
+    <collision name="collision_base">
+      <pose>0 -0 -0.75 0 0 0</pose>
+      <geometry>
+        <box>
+          <size>.6 .9 0.001</size>
+        </box>
+      </geometry>
+    </collision>
+
+    <collision name="collision_model">
+      <pose>0 -0 -0.75 0 0 0</pose>
+      <geometry>
+        <mesh>
+          <uri>model://PatientWheelChair/meshes/PatientWheelChair_Col.obj</uri>
+        </mesh>
+      </geometry>
+      <!-- To reduce the computations, cancel the stiffness configuration of agents -->
+      <surface>
+        <contact>
+          <ode>
+            <kp>9999</kp>
+            <kd>1</kd>
+          </ode>
+        </contact>
+      </surface>
+      <!-- <surface>
+        <contact>
+          <collide_without_contact>true</collide_without_contact>
+        </contact>
+      </surface> -->
+    </collision>
+
+    <visual name="visual">
+      <pose>0 -0 -0.75 0 0 0</pose>
+      <geometry>
+        <mesh>
+          <uri>model://PatientWheelChair/meshes/PatientWheelChair.obj</uri>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+</model>
+
+
+
+
+</sdf>

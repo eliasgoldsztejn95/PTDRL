@@ -1,0 +1,32 @@
+
+<launch>
+ <remap from="/cmd_vel" to="/pedbot/control/cmd_vel"/>
+  <!-- Always set GUI to false for AWS RoboMaker Simulation
+       Use gui:=true on roslaunch command-line to run with a gui.
+  -->
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+<!-- Complex hospital world -->
+<arg name="world_name" value="$(find pedsim_gazebo_plugin)/worlds/hospital_complex_2.world"/>
+
+<!-- Simple hospital world -->
+<!--<arg name="world_name" value="$(find aws_robomaker_hospital_world)/worlds/hospital.world"/>-->
+
+ <arg name="use_sim_time" value="true"/>
+<arg name="paused" value="false"/>
+<arg name="gui" value="true"/> <!--true-->
+<arg name="headless" value="false"/>
+<arg name="debug" value="false"/>
+    <!--<arg name="paused" default="false"/>
+    <arg name="use_sim_time" default="true"/>
+    <arg name="gui" default="true"/>
+    <arg name="headless" default="false"/>
+    <arg name="debug" default="false"/>
+    <arg name="verbose" default="true"/>-->
+  </include>
+  
+           <!-- this node spawn pedsim actors to gazebo once, then the plugin updates their pose -->  
+         <node pkg="pedsim_gazebo_plugin" type="spawn_pedsim_agents_diverse.py" name="spawn_pedsim_agents"  output="screen">
+         </node>
+</launch>
+
