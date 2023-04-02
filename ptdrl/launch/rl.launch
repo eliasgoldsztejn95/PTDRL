@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<!-- Start hospital world with gazebo server --> <!--THIS ONE-->
+<include file="$(find pedsim_gazebo_plugin)/launch/hospital.launch"/>
+
+<!-- Import robot --> <!--THIS ONE-->
+<include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch" />
+<!--<include file="$(find blattoidea)/launch/blattoidea.launch" />-->
+
+
+<!-- Start people simulation --> <!--THIS ONE-->
+<!--<include file="$(find pedsim_simulator)/launch/hospital_for_APPLD.launch" />-->
+<include file="$(find pedsim_simulator)/launch/hospital_complex.launch" />  
+
+<!-- Start move base --> <!--THIS ONE-->
+<include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch" />
+<!--<include file="$(find blattoidea)/launch/navigation.launch" />-->
+
+<!-- Scan to filtered -->
+<!--<node pkg="perception" type="scan_to_filtered.py" name="scan_to_filtered" output="screen"/>-->
+
+<!-- Object tracking -->
+<!--<node pkg="multi_object_tracking_lidar" type="kf_tracker" name="kf_tracker" output="screen"/>-->
+
+<!-- Training -->
+<!--<node pkg="ptdrl" type="train_TD3.py" name="train_TD3" output="screen"/>-->
+
+</launch>
