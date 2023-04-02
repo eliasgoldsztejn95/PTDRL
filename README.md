@@ -56,17 +56,3 @@ The hospital world of amazon has to be moved to pedsim_gazebo_plugin/worlds fold
 has to be added at the end of the file to allow pedestrian movement.
   
 Notice that the pedestrian simulator has to account for obstacles in the world. This should be described in <scenario>.xml found in pedsim_simulator/secnarios.
-  
-  
-### Commands
-To launch the hospital world:
-> roslaunch pedsim_gazebo_plugin hospital.launch
-
-To launch the pedestrian simulator:
-> roslaunch pedsim_simulator simple_pedestrians.launch
-
-### Commands
-To launch the available robots launch:
-> roslaunch blattoidea blattoidea.launch
-
-> roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
