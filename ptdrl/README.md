@@ -1,5 +1,6 @@
 ## PTDRL for simulation
 
+- Launch rl.launch to start Gazebo simulation and robot.
 - To train ptdrl run: train_ddqn.py
 - To generate recordings for benchmark purposes run: test_ddqn.py
 - To visualize scores run: scorify.py
