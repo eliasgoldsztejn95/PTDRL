@@ -4,8 +4,9 @@ Check ports. sudo chmod 0777 /dev/ttyUSB0/1
 1) Launch rover driver:
 roslaunch roverrobotics_driver pro/zero2.launch
 
-2) Launch lidar:
+2) Launch lidar/sensors:
 roslaunch rplidar_ros view_rplidar.launch
+roslaunch roverrobotics_driver rover_sensors.launch
 
 3) Filter scan
 rosparam load /home/tal/rover_ws/src/rplidar_ros/filter/my_filter_config.yaml scan_to_scan_filter_chain
