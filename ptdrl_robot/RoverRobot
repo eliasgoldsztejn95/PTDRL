@@ -16,11 +16,12 @@ rosrun laser_filters scan_to_scan_filter_chain scan:=/scan_raw scan_filtered:=/s
 4) Launch robot description:
 roslaunch roverrobotics_description description-2/4wd.launch
 
-5) Publish odom -> base_footprint transform:
+5) Optional Publish odom -> base_footprint transform:
 python2 odom_baselink.py
 
 6) Start slam_mapping:
 rosrun gmapping slam_gmapping _base_frame:=base_footprint _linearUpdate:=0.0 _angularUpdate:=0.0 _map_update_interval:=1.0
+rosrun hector_mapping hector_mapping
 
 7) Start move_base:
 roslaunch roverrobotics_description rover_move_base.launch
