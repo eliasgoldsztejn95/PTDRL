@@ -21,7 +21,7 @@ python2 odom_baselink.py
 
 6) Start slam_mapping:
 rosrun gmapping slam_gmapping _base_frame:=base_footprint _linearUpdate:=0.0 _angularUpdate:=0.0 _map_update_interval:=1.0
-rosrun hector_mapping hector_mapping
+rosrun hector_mapping hector_mapping _map_update_distance_thresh:=0.0 _map_update_angle_thresh:=0.0 _map_resolution:=0.1
 
 7) Start move_base:
 roslaunch roverrobotics_description rover_move_base.launch
