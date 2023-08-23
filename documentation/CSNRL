@@ -1,0 +1,3 @@
+CSNRL
+
+To disconnect move_base cmd_vel: <arg name="cmd_vel_topic" default="/pedbot/control/cmd_vel_nothing" />. From file: move_base.launch
