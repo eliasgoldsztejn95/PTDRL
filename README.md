@@ -49,7 +49,8 @@ The models have to be downloaded manually from: https://app.ignitionrobotics.org
 <img src="https://user-images.githubusercontent.com/75029654/166143081-f978b80b-680e-4c15-87a3-a95c89352896.png" width="500" height="250">
 
 The pedestrian simulation is acquired using pedsim_ros package. The package is based on: https://arxiv.org/pdf/cond-mat/9805244.pdf social force model.
-This package allows to choose the quantity and type of pedestrians, and motion patterns. THe package was taken from: https://github.com/srl-freiburg/pedsim_ros.
+This package allows to choose the quantity and type of pedestrians, and motion patterns. The package was taken from: https://github.com/srl-freiburg/pedsim_ros. Download
+and install the package.
 
 ### Notes
 The hospital world of amazon has to be moved to pedsim_gazebo_plugin/worlds folder. Notice that the line: plugin name="ActorPosesPlugin" filename="libActorPosesPlugin.so"
